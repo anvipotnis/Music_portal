@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{056E6F02-BEDC-4286-B771-7238A8488431}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>musify</RootNamespace>
+    <AssemblyName>musify</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminlogin.Designer.cs">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="artist1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="artist1.Designer.cs">
+      <DependentUpon>artist1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="artist2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="artist2.Designer.cs">
+      <DependentUpon>artist2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="artist3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="artist3.Designer.cs">
+      <DependentUpon>artist3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="artist4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="artist4.Designer.cs">
+      <DependentUpon>artist4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="artistInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="artistInfo.Designer.cs">
+      <DependentUpon>artistInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="artistlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="artistlogin.Designer.cs">
+      <DependentUpon>artistlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="find.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="find.Designer.cs">
+      <DependentUpon>find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="playlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="playlist.Designer.cs">
+      <DependentUpon>playlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rate.Designer.cs">
+      <DependentUpon>rate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musify.Designer.cs">
+      <DependentUpon>musify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registerart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerart.Designer.cs">
+      <DependentUpon>registerart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usr.Designer.cs">
+      <DependentUpon>usr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usrlogin.Designer.cs">
+      <DependentUpon>usrlogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminlogin.resx">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="artist1.resx">
+      <DependentUpon>artist1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="artist2.resx">
+      <DependentUpon>artist2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="artist3.resx">
+      <DependentUpon>artist3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="artist4.resx">
+      <DependentUpon>artist4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="artistInfo.resx">
+      <DependentUpon>artistInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="artistlogin.resx">
+      <DependentUpon>artistlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="find.resx">
+      <DependentUpon>find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="playlist.resx">
+      <DependentUpon>playlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rate.resx">
+      <DependentUpon>rate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musify.resx">
+      <DependentUpon>musify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="registerart.resx">
+      <DependentUpon>registerart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usr.resx">
+      <DependentUpon>usr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrlogin.resx">
+      <DependentUpon>usrlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
